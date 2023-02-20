@@ -1,0 +1,45 @@
+body {
+background: url('../img/back-ground-board')  no-repeat;
+}
+
+.welcome {
+  font-size: 30px;
+  font-family: consolas;
+  text-align: center;
+}
+
+#board {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 50px auto;
+}
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  background-color: #eee;
+}
+
+.info {
+  text-align: center;
+}
+
+.restart {
+  display: none;
+
+  font-size: large;
+  font-family: consolas;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: rgba(0,0,0, .6);
+  padding: 10px;
+  width: 100px;
+  background-color: rgb(98, 156, 53);
+}
